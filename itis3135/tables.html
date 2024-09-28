@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>tables</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.5">
+  <style>
+    ol{
+      font-size: 100%;
+      color: rgb(189, 189, 189);
+      font-family: 'Arial';
+      text-shadow: 
+                -1px -1px 0 black,
+                1px -1px 0 black,  
+                -1px 1px 0 black, 
+                2px 2px 0 black;
+    }
+    table{
+      margin: 0 auto;
+      font-size: 100%;
+      color: rgb(189, 189, 189);
+      font-family: 'Arial';
+      text-shadow: 
+                -1px -1px 0 black,
+                1px -1px 0 black,  
+                -1px 1px 0 black, 
+                2px 2px 0 black;
+    }
+    h1 {
+      font-size: 300%;
+      color: rgb(189, 189, 189);
+      text-align:center;
+      font-family: 'Arial Bold';
+      text-shadow: 
+                -1px -1px 0 black,
+                1px -1px 0 black,  
+                -1px 1px 0 black, 
+                3px 3px 0 black;
+    }
+    h3 {
+      font-size: 200%;
+      color: rgb(189, 189, 189);
+      text-align:center;
+      font-family: 'Arial Bold';
+      text-shadow: 
+                -1px -1px 0 black,
+                1px -1px 0 black,  
+                -1px 1px 0 black, 
+                3px 3px 0 black;
+    }
+    p {
+      font-size: 100%;
+      color: rgb(189, 189, 189);
+      text-align:center;
+      font-family: 'Arial';
+      text-shadow: 
+                -1px -1px 0 black,
+                1px -1px 0 black,  
+                -1px 1px 0 black, 
+                2px 2px 0 black;
+    }
+    html, body {
+      height:100%;
+      margin:0;
+    }
+    body {
+      background-color: rgb(55, 0, 121);
+      display:flex;
+      flex-direction:column;
+      height:100vh;
+      margin:0;
+      padding:0;
+    }
+    main{
+      flex:1;
+      margin-bottom:600px;
+    }
+    footer {
+      position: fixed;
+      bottom:0;
+      width:100%;
+      background-color:rgb(28, 0, 63);
+      text-align:center;
+    }
+    .pic {
+            display:block;
+            margin:0 auto;
+            width:50%;
+            height:auto;
+    }
+    a {
+            color: rgb(0, 100, 251);
+            text-shadow: 
+                0px 0px 0 black,
+                0px 0px 0 black,  
+                0px 0px 0 black, 
+                1px 1px 0 black;
+    }
+  </style>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <h3><br>My Tabular Data</h3>
+    
+    <p><ol>
+      <li>John Smithington</li>
+      <li>Shirly Goodington</li>
+      <li>Biff Badgloom</li>
+      <li>Mike Ikeson</li>
+      <li>Bob Boomer</li>
+      <li>Dave Diver</li>
+      <li>Jep Jeep</li>
+    </ol></p>
+
+
+    <h3><br>Employee Data in Simple Table</h3>
+    <table>
+      <b><tr> <th>Name</th> <th>Email</th> <th>Salary</th> </tr></b>
+
+      <tr> <th>John Smithington</th> <th>JohnSmith@gmail.com</th> <th>1,000,000</th> </tr>
+
+      <tr> <th>Shirly Goodington</th> <th>ShirlyGood@gmail.com</th> <th>2,000,000</th> </tr>
+
+      <tr> <th>Biff Badgloom</th> <th>biffbad@gmail.com</th> <th>29,000</th> </tr>
+
+      <tr> <th>Mike Ikeson</th> <th>MIkeson@gmail.com</th> <th>3,000,000</th> </tr>
+
+      <tr> <th>Bob Boomer</th> <th>bobboomer@gmail.com</th> <th>10,000,000</th> </tr>
+
+      <tr> <th>Dave Diver</th> <th>DDiver3@gmail.com</th> <th>4,000,000</th> </tr>
+
+      <tr> <th>Jep Jeep</th> <th>JeepJohn@gmail.com</th> <th>5,000,000</th> </tr>
+    </table>
+
+    <h3><br>Employee Data in a Better Table</h3>
+    <figure>
+    <table>
+      <tr> <th>Category</th> <th>Name</th> <th>Email</th> <th>Salary</th> </tr>
+
+      <tr> <td rowspan="3">Managers</td> <td>John Smithington</td> <td>JohnSmith@gmail.com</td> <td>1,000,000</td> </tr>
+
+      <tr> <td>Shirly Goodington</td> <td>ShirlyGood@gmail.com</dh> <td>2,000,000</td> </tr>
+
+      <tr> <td>Biff Badgloom</td> <td>biffbad@gmail.com</td> <td>29,000</td> </tr>
+
+      <tr> <td rowspan="3">Managers</td> <td>Mike Ikeson</td> <td>MIkeson@gmail.com</td> <td>3,000,000</td> </tr>
+
+      <tr> <td>Bob Boomer</td> <td>bobboomer@gmail.com</td> <td>10,000,000</td> </tr>
+
+      <tr> <td>Dave Diver</td> <td>DDiver3@gmail.com</td> <td>4,000,000</td> </tr>
+
+      <tr> <td rowspan="1">Janitors</td><td>Jep Jeep</td> <td>JeepJohn@gmail.com</td> <td>5,000,000</td> </tr>
+    </table>
+    <figcaption><p>Figure: My "Employees"</p></figcaption>
+    </figure>
+
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
