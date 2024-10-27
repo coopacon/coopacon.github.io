@@ -71,6 +71,8 @@ function showTextFour() {
 }
 
 
+
 let thisPage = window.location.href;
+alert(thisPage);
 document.getElementById("html-validator").innerHTML = document.getElementById("html-validator").innerHTML + "check?uri=" + thisPage;
 document.getElementById("CSS-validator").innerHTML = document.getElementById("CSS-validator").innerHTML + "check?uri=" + thisPage;
