@@ -1,12 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     let thisPage = window.location.href;
-    alert(thisPage);
     document.getElementById("html-validator").href = "https://validator.w3.org/check?uri=" + thisPage;
     document.getElementById("CSS-validator").href =  "https://jigsaw.w3.org/css-validator/validator?uri=" + thisPage;
 
-
-    document.getElementById("test").innerHTML = "test";
 });
 function updateDateTime(){
     const now = new Date();
