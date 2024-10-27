@@ -1,4 +1,13 @@
 
+document.addEventListener('DOMContentLoaded', function() {
+    let thisPage = window.location.href;
+    alert(thisPage);
+    document.getElementById("html-validator").href = "https://validator.w3.org/check?uri=" + thisPage;
+    document.getElementById("CSS-validator").href =  "https://jigsaw.w3.org/css-validator/validator?uri=" + thisPage;
+
+
+    document.getElementById("test").innerHTML = "test";
+});
 function updateDateTime(){
     const now = new Date();
     const options = {
@@ -68,11 +77,6 @@ function showTextThree() {
 }
 function showTextFour() {
     document.getElementById("message").innerHTML = "In the Virgo Supercluster, specifically within the Local Group, approximately two-thirds of the way out from the center in the Orion Arm, about 4.24 light-years from Proxima Centauri, 16-20 light-years above the mid-plane, and situated in the Milky Way.";
+    
 }
 
-
-
-let thisPage = window.location.href;
-alert(thisPage);
-document.getElementById("html-validator").innerHTML = "https://validator.w3.org/check?uri=" + thisPage;
-document.getElementById("CSS-validator").innerHTML =  "https://jigsaw.w3.org/css-validator/validator?uri=" + thisPage;
