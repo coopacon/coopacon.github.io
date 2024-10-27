@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"> 
+</html>
+<head>
+    <title>My First Script Page</title>
+    <script src="scripts/defaultscripts.js"></script>
+    <style>
+        form{
+          font-size: 100%;
+          color: rgb(189, 189, 189);
+          text-align:center;
+          font-family: 'Arial';
+          text-shadow: 
+                    -1px -1px 0 black,
+                    1px -1px 0 black,  
+                    -1px 1px 0 black, 
+                    2px 2px 0 black;
+        }
+        ol{
+          font-size: 100%;
+          color: rgb(189, 189, 189);
+          font-family: 'Arial';
+          text-shadow: 
+                    -1px -1px 0 black,
+                    1px -1px 0 black,  
+                    -1px 1px 0 black, 
+                    2px 2px 0 black;
+        }
+        table{
+          margin: 0 auto;
+          font-size: 100%;
+          color: rgb(189, 189, 189);
+          font-family: 'Arial';
+          text-shadow: 
+                    -1px -1px 0 black,
+                    1px -1px 0 black,  
+                    -1px 1px 0 black, 
+                    2px 2px 0 black;
+        }
+        h1 {
+          font-size: 300%;
+          color: rgb(189, 189, 189);
+          text-align:center;
+          font-family: 'Arial Bold';
+          text-shadow: 
+                    -1px -1px 0 black,
+                    1px -1px 0 black,  
+                    -1px 1px 0 black, 
+                    3px 3px 0 black;
+        }
+        h2 {
+          font-size: 250%;
+          color: rgb(189, 189, 189);
+          text-align:center;
+          font-family: 'Arial Bold';
+          text-shadow: 
+                    -1px -1px 0 black,
+                    1px -1px 0 black,  
+                    -1px 1px 0 black, 
+                    3px 3px 0 black;
+        }
+        h3 {
+          font-size: 200%;
+          color: rgb(189, 189, 189);
+          text-align:center;
+          font-family: 'Arial Bold';
+          text-shadow: 
+                    -1px -1px 0 black,
+                    1px -1px 0 black,  
+                    -1px 1px 0 black, 
+                    3px 3px 0 black;
+        }
+        p {
+          font-size: 100%;
+          color: rgb(189, 189, 189);
+          text-align:center;
+          font-family: 'Arial';
+          text-shadow: 
+                    -1px -1px 0 black,
+                    1px -1px 0 black,  
+                    -1px 1px 0 black, 
+                    2px 2px 0 black;
+        }
+        html, body {
+          height:100%;
+          margin:0;
+        }
+        body {
+          background-color: rgb(55, 0, 121);
+          display:flex;
+          flex-direction:column;
+          height:100vh;
+          margin:0;
+          padding:0;
+        }
+        main{
+          flex:1;
+          margin-bottom:600px;
+        }
+        footer {
+          position: fixed;
+          bottom:0;
+          width:100%;
+          background-color:rgb(28, 0, 63);
+          text-align:center;
+        }
+        .pic {
+                display:block;
+                margin:0 auto;
+                width:50%;
+                height:auto;
+        }
+        a {
+                color: rgb(0, 100, 251);
+                text-shadow: 
+                    0px 0px 0 black,
+                    0px 0px 0 black,  
+                    0px 0px 0 black, 
+                    1px 1px 0 black;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>202480-Fall 2024-ITIS-3135-052-Web App Design and Development - Isaac Cooper</h1>
+        <h3></h3>
+        <p id="todayDate"></p>
+    </header>
+
+    <h2>My First Script Page</h2>
+
+    <p>Whats your name?</p> 
+
+    <input id="enteredName" required>
+    
+    <p>How are you feeling (one word)?</p> 
+
+    <input id="feeling" required> 
+    <button type="button" onclick="printGreeting()">Submit</button>
+
+    <p id="feelingMessage"></p>
+
+
+
+    <p>Enter your favorite number 1-10</p> 
+
+    <input id="number" required> 
+    <button type="button" onclick="polyfun()">Submit</button>
+
+    <p id="polygonMessage"></p>
+
+
+    <br>
+    <br>
+    <button id="myButton" onclick="showTextOne()">Pet the Phoenix</button>
+    <button id="myButtonTwo" onclick="showTextTwo()">Is the Phoenix feeling salty?</button>
+    <br>
+    <button id="myButtonThree" onclick="showTextThree()">Calculate Profits</button>
+    <button id="myButtonFour" onclick="showTextFour()">Where am I?</button>
+    <p id="message"></p>
+
+
+    
+
+</body>
+<footer>
+    <a id="html-validator" href="https://validator.w3.org/" target="_blank">HTML Validator</a>
+    <a id="CSS-validator" href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a>
+</footer>
