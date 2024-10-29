@@ -6,7 +6,7 @@ let numberOfFiles = 2;
 function addField(){
     numberOfFiles++;
 
-    alert(adding field)
+    alert("adding field");
     //const newDiv = document.createElement("div");
     const newEntry = document.createElement("input");
     newEntry.type = "text";
