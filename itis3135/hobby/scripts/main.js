@@ -2,7 +2,7 @@
 function showSection(sectionId) {
     // Hide all sections
     const sections = document.querySelectorAll('main section');
-    sections.forEach(section => section.style.display = 'none');
+    sections.forEach((section) => section.style.display = 'none');
     
     // Show the selected section
     document.getElementById(sectionId).style.display = 'block';
