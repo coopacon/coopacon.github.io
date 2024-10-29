@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketching</title>
+    <style>/* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf6ed; /* Off-white, soft cream */
+            color: #383a38;
+            margin: 0;
+            padding: 0;
+        }
+
+        .double-space{
+            line-height: 2;
+        }
+        
+        /* Header and Navigation Bar */
+        header {
+            background-color: #7EA172; /* Deep teal */
+            color: #fdf6ed;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #fdf6ed;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li:not(:last-child)::after {
+            content: " ⏵ ";
+            color: #fdf6ed;
+        }
+        
+        /* Section Styling */
+        section {
+            display: none;
+            padding: 2rem;
+        }
+        
+        #home {
+            display: block; /* Home section visible by default */
+        }
+        
+        h1, h2 {
+            color: #7EA172; /* Deep teal */
+        }
+        
+        table, form, p, figure {
+            margin-top: 1rem;
+        }
+        
+        /* Figure and Image Styling */
+        figure {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        
+        figure img {
+            width: 30%;
+            border-radius: 10px;
+            height: auto;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        figcaption {
+            color: #666666; /* Light gray for captions */
+            font-style: italic;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #eee8e0;
+            color: #383a38;
+            text-align: center;
+            padding: 1rem;
+        }
+        a {
+            color: rgb(0, 100, 251);   
+        }</style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Sketching</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">What</a></li>
+                <li><a href="#who" onclick="showSection('who')">Who</a></li>
+                <li><a href="#when" onclick="showSection('when')">When</a></li>
+                <li><a href="#where" onclick="showSection('where')">Where</a></li>
+                <li><a href="#how" onclick="showSection('how')">How</a></li>
+                <li><a href="#why" onclick="showSection('why')">Why</a></li>
+                <li><a href="#ai-prompts" onclick="showSection('ai-prompts')">AI Prompts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to what Sketching is</h2>
+            <p class="double-space">This section describes what sketching is and its significance as a hobby. Sketching is the act of drawing simple, quick representations of scenes, objects, or ideas using basic lines and shapes. Unlike detailed artwork, sketches capture the essence of a subject without extensive refinement, making it a flexible and expressive activity. As a hobby, sketching is significant because it allows people to express their thoughts, emotions, and creativity without requiring complex tools or advanced skills. It’s often therapeutic, reducing stress and anxiety, and can be practiced anywhere, making it accessible for anyone wanting to explore their artistic side.</p>
+            <p class="double-space">Sketching is the practice of illustrating what is seen with a pencil or marking tool. Artistically, sketching is viewed as a foundational practice that helps artists refine their observation and composition skills. It serves as a preliminary step in the creative process, where ideas can be tested and explored before being committed to a final form. Culturally, sketching has a rich history that dates back to ancient cave paintings and manuscripts, showcasing a universal impulse to capture life, ideas, and surroundings visually. It often reflects societal values, capturing moments, emotions, and people from various points in time, which offers insights into the cultural contexts from which these sketches originated.</p>
+            <figure>
+                <img src="images/SketchingAI.jpeg" alt="An AI illustration of various sketch doodles">
+                <figcaption>An AI illustration of various sketch doodles <br> "What is Sketching?"" </figcaption>
+            </figure>
+        </section>
+
+        <section id="who">
+            <h2>About Me</h2>
+            <p class="double-space">Meet the individual behind this page. Identifying the author of a webpage is crucial for establishing credibility and accountability. Knowing who created the content provides readers with insights into the expertise, background, and perspective behind the information. This transparency is particularly important for educational or instructional pages, as readers can trust the guidance based on the author’s qualifications. Moreover, author identification allows for clearer ownership, making it easier to track sources and reference the material accurately. It promotes ethical web practices by holding authors responsible for the information they present.</p>
+            <p class="double-space">I enjoy Sketching. Personal Background:  I was born in Maryland and I moved here just over 10 years ago.
+                Professional Background: I am an Eagle Scout and just finished a children’s software/filming teaching job at Blackrocket over the summer.
+                Academic Background:  I am studying computer science with a minor in Software Engineering. I am currently starting my Senior year.
+            </p>
+            <figure>
+                <img src="images/CooperFamily1122-183.jpg" alt="A photo of a young white guy with brown hair and glasses">
+                <figcaption>A photo of a young white guy with brown hair and glasses</figcaption>
+            </figure>
+        </section>
+
+        <section id="when">
+            <h2>Best Times for Sketching</h2>
+            <p class="double-space">I sketch every blue moon, when I am feeling inspired. The best time to sketch can vary based on personal preference, but many find early mornings or late afternoons ideal due to the natural lighting and the peacefulness of those hours. Morning sketches can capture the soft, diffused light that enhances shadow details, while afternoons often bring vibrant colors and a dynamic atmosphere. These times also offer a quieter environment, allowing for focus and uninterrupted creativity. However, inspiration can strike anytime, so carrying a sketchpad throughout the day can open up opportunities to capture spontaneous moments.
+            </p>
+            <p class="double-space">Ideally I sketch in my downtime. Sketching is an ideal activity to fill various types of downtime. Whether waiting for a friend at a café, sitting in a park during lunch break, or even during a train or bus commute, sketching can make otherwise idle time feel productive. These moments provide a chance to observe surroundings closely, practice different techniques, or experiment with capturing quick impressions. Sketching during downtime not only enriches those pockets of time but also keeps the mind engaged and creatively active in a way that can reduce stress and foster mindfulness.</p>
+            <figure>
+                <img src="images/PencilClockAI.jpeg" alt="An AI illustration of a clock surrounded by color pencils">
+                <figcaption>An AI illustration of a clock surrounded by color pencils <br> "clock with pencils instead of clock hands" </figcaption>
+            </figure>
+        </section>
+
+        <section id="where">
+            <h2>Best Locations for Sketching</h2>
+            <p class="double-space">Outside is a great place for inspiration. Inspiration for sketching can be found almost anywhere if one looks closely. Observing nature—whether trees, clouds, rivers, or even urban parks—can inspire sketches of varying textures, shapes, and perspectives. Visiting museums or browsing online art communities can also spark ideas and encourage new approaches. Everyday moments, such as people walking by, interesting architectural details, or even items on a desk, can serve as subjects. By looking at the world with a creative lens, a sketch artist can find endless sources of inspiration in the ordinary and the extraordinary alike.</p>
+            <p class="double-space">Literally any place can have something to sketch, or some challenge. Sketching can be done anywhere, from tranquil outdoor settings to bustling city streets. Nature lovers might find inspiration in sketching by a lake, on a mountaintop, or in a botanical garden, capturing the textures of leaves, rocks, and water. For those who enjoy urban scenes, cafés, parks, or historic buildings offer interesting compositions and subjects. Even indoors, places like art studios, libraries, or one’s own living room can provide comfortable spots to sketch, proving that no special setting is required for creativity to thrive.</p>
+            <figure>
+                <img src="images/SketchingParkAI.jpeg" alt="An AI illustration of an ideal location for sketching">
+                <figcaption>An AI illustration of an ideal location for sketching <br> "I Sketch in my downtime" </figcaption>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>How to Start Sketching</h2>
+            <p class="double-space">Get practical tips and techniques for beginners. Sketching doesn’t require intricate techniques or complex supplies; it can be as simple as using a pencil on a piece of paper. Generically, sketching involves using lines, shapes, and shading to represent the subject in a way that conveys its essence without needing every detail. It’s a freeform process that can start with basic outlines before adding shading, textures, and contours. Many artists rely on sketching as a way to quickly capture an idea, using basic strokes to mark out the shape and composition without overthinking or refining.</p>
+            <p class="double-space">All you need to start is a pencil, paper, and your imagination. Learning sketching pragmatically involves practicing foundational techniques like line work, shading, and proportion. Beginners might start by drawing simple objects around them, studying their shapes, angles, and shadows. Many artists find it helpful to study reference materials or take basic art courses to understand different sketching methods. Over time, practicing regularly and experimenting with various subjects can help build confidence and skill. As one improves, sketching becomes an intuitive process, turning observation into art with ease and fluency.</p>
+            <figure>
+                <img src="images/SketchingPillarAI.jpeg" alt="An AI illustration of how to draw a pillar">
+                <figcaption>An AI illustration of how to draw a pillar <br> "how to sketch visual structure" </figcaption>
+            </figure>
+        </section>
+
+        <section id="why">
+            <h2>Why Sketch?</h2>
+            <p class="double-space">Learn about the benefits of sketching as a hobby. Historically, sketching has been preserved because it offers a unique snapshot of the past. Artists and explorers used sketches to document landmarks, events, and discoveries before the advent of cameras. In this way, sketches serve as invaluable records, providing insight into earlier times and cultures through a creative lens. For example, Leonardo da Vinci’s anatomical sketches have informed centuries of scientific study, while travel sketches from the 18th century showcase how people saw the world around them. Because of its cultural and educational value, sketching remains an enduring part of history.</p>
+            <p class="double-space">Sketching is art. It sustains creativity and visualization. Sketching has several social benefits, as it can foster a sense of community and encourage creative collaboration. Whether participating in group sketching sessions or sharing work online, sketching connects people with similar interests and creates a supportive environment for creative growth. Group sketching activities, such as life drawing classes or urban sketching meetups, allow participants to learn from each other and appreciate different styles. Socially, sketching promotes the exchange of ideas, helps break the ice between strangers, and nurtures creativity that has a positive impact on community engagement.</p>
+            <p>It's a great way to enjoy the visual structure of what is.</p>
+            <figure>
+                <img src="images/SketchedValleyAI.jpeg" alt="An AI illustration of a vast valley">
+                <figcaption>An AI illustration of a vast valley <br> "rough black and white sketch of a beautiful distant landscape" </figcaption>
+            </figure>
+        </section>
+
+        <section id="ai-prompts">
+            <h2>AI Prompts Used</h2>
+            <p class="double-space">Here, I list the prompts used to create this webpage with the assistance of ChatGPT.</p>
+            <p class="double-space">Each prompt guided the development of each section of this webpage.</p>
+            <br>
+            <p class="double-space">First Prompt:      "Create an index.html file with the following:
+                Embedded Sytlesheet in the head tag. Styling needs to follow CRAP. No times-new roman. white background, black default, default colors of any links, nice color scheme. Everything should be in a Body tog, header, main, and footer.
+                
+                Header should have h1 that says “Sketching”. Header should include:
+                    navigation bar with navigation links to different parts of the page. the sections that need links include who, what, when, where, how, why, and AI-Prompts
+                    icons to divide the links
+                    when a link is clicked everything on the page should be hidden except for the nav bar and the chosen section (what section should be the first one loaded).
+                If using a JS file use access it through script src="scripts/insertScriptNameHere.js"/script
+                
+                For each section include:
+                    the section name
+                    an h2 tag that tells the purpose of the section
+                    and 3 placeholder items for (either a table, form, paragraph, and a figure, etc. A figure is an img and figcaption.)
+                
+                * who (this name is a guide- you can change it to be something related, like "About Me" or "About" or "Who we Are")
+                * what (this will be your home page- and you can call it home, and it's what should load first, explain what the hobby is about )
+                * when (this name is a guide - you can change use it or change it to something like "Best Times" or "Schedule" or "Seasons" or something time related. )
+                * where (this name is a guide and you can also change it to "best locations" or something like that)
+                * how
+                * why
+                * AI Prompts ( If you used AI to generate code or just text, make this section so that we can see all the prompts used to create this page)"</p>
+                <br>
+                <p class="double-space">Second Prompt: "I need each section to include an image like so: section id="where">
+                    h2>Best Locations for Sketching/h2>
+                    p>Outside is a great place for inspiration./p>
+                    p>Literally any place can have something to sketch, or some challenge./p>
+                    figure>
+                        img src="images/SketchingParkAI.jpeg" alt="An AI illustration of an ideal location for sketching">
+                        figcaption>An AI illustration of an ideal location for sketching/figcaption>
+                    /figure>
+                /section>
+        I would like these images to have rounded corners and be about 30% of the width (the height should be modified the same way). Give me the figure tags (and the elements within) that I should paste into my code. 
+        Also re-give me the style sheet but with a color scheme that doesn't use the absolute white color."</p>
+            <br>
+            <p class="double-space">Third prompt: Write a paragraph (good chunk of material over 2 sentences) for each of the following categories:
+                What sketching is and its significance as a hobby
+                What it is artistically and culturally understood as
+                When a good time to sketch is.
+                What types of downtime you can sketch during
+                Where to get inspiration for sketching
+                Where you could sketch
+                How sketching can be done generically
+                How sketching can be learned pragmatically
+                Why sketching is generically historically preserved
+                Why it is socially benefical
+                Why it is good to identify the author of a webpage</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sketching Guide</p>
+        <a id="html-validator" href="https://validator.w3.org/" target="_blank">HTML Validator</a>
+        <a id="CSS-validator" href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a>
+        <br>
+        <a href="https://webpages.charlotte.edu/icooper2/itis3135/IC-Now-Enterprises.com/">My 'Design Firm'</a>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
