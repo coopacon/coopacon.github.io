@@ -11,8 +11,8 @@ function draw(){
     //function to change the 'position' of the 'camera' every touch
     orbitControl();
 
-    for(let zAngle=0;zAngle<360;zAngle+=30){
-        for(let xAngle=0;xAngle<360;xAngle+=30){
+    for (let zAngle=0;zAngle<360;zAngle+=30) {
+        for (let xAngle=0;xAngle<360;xAngle+=30) {
             push();
 
             rotateZ(zAngle);
