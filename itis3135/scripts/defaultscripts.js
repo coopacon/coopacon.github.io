@@ -1,10 +1,4 @@
 
-document.addEventListener('DOMContentLoaded', function() {
-    let thisPage = window.location.href;
-    document.getElementById("html-validator").href = "https://validator.w3.org/check?uri=" + thisPage;
-    document.getElementById("CSS-validator").href =  "https://jigsaw.w3.org/css-validator/validator?uri=" + thisPage;
-
-});
 function updateDateTime(){
     const now = new Date();
     const options = {
@@ -18,7 +12,7 @@ function updateDateTime(){
         twelveHour: true
     };
     const dateTimeString = now.toLocaleString('en-US', options);
-    document.getElementById("todayDate").innerText = dateTimeString;
+    document.getElementById("today-date").innerText = dateTimeString;
 }
 setInterval(updateDateTime, 1000);
 updateDateTime();
@@ -28,36 +22,36 @@ updateDateTime();
 
 
 function printGreeting() {
-    let enteredName = document.getElementById("enteredName").value;
+    let enteredName = document.getElementById("entered-name").value;
     let feeling = document.getElementById("feeling").value;
 
-    document.getElementById('feelingMessage').textContent = `Hello ${enteredName}. Hear you're feeling ${feeling}.`;
+    document.getElementById('feeling-message').textContent = `Hello ${enteredName}. Hear you're feeling ${feeling}.`;
 }
 
 function polyfun() {
-    let myNumber = document.getElementById("number").value;
+    let myNumber = Number(document.getElementById("number").value);
     if (isNaN(myNumber) || myNumber < 1 || myNumber > 10) {
-        document.getElementById("polygonMessage").innerHTML = "Please enter a number 1-10";
-    } else if (myNumber == 1){
-        document.getElementById("polygonMessage").innerHTML = "Did you know?: a henagon 'has' 1 side!";
-    } else if (myNumber == 2){
-        document.getElementById("polygonMessage").innerHTML = "Did you know?: a digon 'has' 2 sides!";
-    } else if (myNumber == 3){
-        document.getElementById("polygonMessage").innerHTML = "Did you know?: a trigon has 3 sides!";
-    } else if (myNumber == 4){
-        document.getElementById("polygonMessage").innerHTML = "Did you know?: a tetragon has 4 sides!";
-    } else if (myNumber == 5){
-        document.getElementById("polygonMessage").innerHTML = "Did you know?: a pentagon has 5 sides!";
-    } else if (myNumber == 6){
-        document.getElementById("polygonMessage").innerHTML = "Did you know?: a hexagon has 6 sides!";
-    } else if (myNumber == 7){
-        document.getElementById("polygonMessage").innerHTML = "Did you know?: a heptagon has 7 sides!";
-    } else if (myNumber == 8){
-        document.getElementById("polygonMessage").innerHTML = "Did you know?: an octagon has 8 sides!";
-    } else if (myNumber == 9){
-        document.getElementById("polygonMessage").innerHTML = "Did you know?: an enneagon has 9 sides!";
-    } else if (myNumber == 10){
-        document.getElementById("polygonMessage").innerHTML = "Did you know?: a decagon has 10 sides!";
+        document.getElementById("polygon-message").innerHTML = "Please enter a number 1-10";
+    } else if (myNumber === 1){
+        document.getElementById("polygon-message").innerHTML = "Did you know?: a henagon 'has' 1 side!";
+    } else if (myNumber === 2){
+        document.getElementById("polygon-message").innerHTML = "Did you know?: a digon 'has' 2 sides!";
+    } else if (myNumber === 3){
+        document.getElementById("polygon-message").innerHTML = "Did you know?: a trigon has 3 sides!";
+    } else if (myNumber === 4){
+        document.getElementById("polygon-message").innerHTML = "Did you know?: a tetragon has 4 sides!";
+    } else if (myNumber === 5){
+        document.getElementById("polygon-message").innerHTML = "Did you know?: a pentagon has 5 sides!";
+    } else if (myNumber === 6){
+        document.getElementById("polygon-message").innerHTML = "Did you know?: a hexagon has 6 sides!";
+    } else if (myNumber === 7){
+        document.getElementById("polygon-message").innerHTML = "Did you know?: a heptagon has 7 sides!";
+    } else if (myNumber === 8){
+        document.getElementById("polygon-message").innerHTML = "Did you know?: an octagon has 8 sides!";
+    } else if (myNumber === 9){
+        document.getElementById("polygon-message").innerHTML = "Did you know?: an enneagon has 9 sides!";
+    } else if (myNumber === 10){
+        document.getElementById("polygon-message").innerHTML = "Did you know?: a decagon has 10 sides!";
     }
 
 }
@@ -77,3 +71,10 @@ function showTextFour() {
     
 }
 
+document.getElementById("greeting").addEventListener("click", printGreeting);
+document.getElementById("polyfun").addEventListener("click", polyfun);
+
+document.getElementById("my-button").addEventListener("click", showTextOne);
+document.getElementById("my-button-two").addEventListener("click", showTextTwo);
+document.getElementById("my-button-three").addEventListener("click", showTextThree);
+document.getElementById("my-button-four").addEventListener("click", showTextFour);

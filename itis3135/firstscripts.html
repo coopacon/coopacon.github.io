@@ -1,128 +1,16 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>My First Script Page</title>
-    <script src="scripts/defaultscripts.js"></script>
-    <style>
-        form{
-          font-size: 100%;
-          color: rgb(189, 189, 189);
-          text-align:center;
-          font-family: 'Arial';
-          text-shadow: 
-                    -1px -1px 0 black,
-                    1px -1px 0 black,  
-                    -1px 1px 0 black, 
-                    2px 2px 0 black;
-        }
-        ol{
-          font-size: 100%;
-          color: rgb(189, 189, 189);
-          font-family: 'Arial';
-          text-shadow: 
-                    -1px -1px 0 black,
-                    1px -1px 0 black,  
-                    -1px 1px 0 black, 
-                    2px 2px 0 black;
-        }
-        table{
-          margin: 0 auto;
-          font-size: 100%;
-          color: rgb(189, 189, 189);
-          font-family: 'Arial';
-          text-shadow: 
-                    -1px -1px 0 black,
-                    1px -1px 0 black,  
-                    -1px 1px 0 black, 
-                    2px 2px 0 black;
-        }
-        h1 {
-          font-size: 300%;
-          color: rgb(189, 189, 189);
-          text-align:center;
-          font-family: 'Arial Bold';
-          text-shadow: 
-                    -1px -1px 0 black,
-                    1px -1px 0 black,  
-                    -1px 1px 0 black, 
-                    3px 3px 0 black;
-        }
-        h2 {
-          font-size: 250%;
-          color: rgb(189, 189, 189);
-          text-align:center;
-          font-family: 'Arial Bold';
-          text-shadow: 
-                    -1px -1px 0 black,
-                    1px -1px 0 black,  
-                    -1px 1px 0 black, 
-                    3px 3px 0 black;
-        }
-        h3 {
-          font-size: 200%;
-          color: rgb(189, 189, 189);
-          text-align:center;
-          font-family: 'Arial Bold';
-          text-shadow: 
-                    -1px -1px 0 black,
-                    1px -1px 0 black,  
-                    -1px 1px 0 black, 
-                    3px 3px 0 black;
-        }
-        p {
-          font-size: 100%;
-          color: rgb(189, 189, 189);
-          text-align:center;
-          font-family: 'Arial';
-          text-shadow: 
-                    -1px -1px 0 black,
-                    1px -1px 0 black,  
-                    -1px 1px 0 black, 
-                    2px 2px 0 black;
-        }
-        html, body {
-          height:100%;
-          margin:0;
-        }
-        body {
-          background-color: rgb(55, 0, 121);
-          display:flex;
-          flex-direction:column;
-          height:100vh;
-          margin:0;
-          padding:0;
-        }
-        main{
-          flex:1;
-          margin-bottom:600px;
-        }
-        footer {
-          position: fixed;
-          bottom:0;
-          width:100%;
-          background-color:rgb(28, 0, 63);
-          text-align:center;
-        }
-        .pic {
-                display:block;
-                margin:0 auto;
-                width:50%;
-                height:auto;
-        }
-        a {
-                color: rgb(0, 100, 251);
-                text-shadow: 
-                    0px 0px 0 black,
-                    0px 0px 0 black,  
-                    0px 0px 0 black, 
-                    1px 1px 0 black;
-        }
-      </style>
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>202480-Fall 2024-ITIS-3135-052-Web App Design and Development - Isaac Cooper</h1>
-        <h3 id="todayDate">Day, Month Date, Year at Time</h3>
+      <div data-include="components/header.html"></div>
+        <h3 id="today-date">Day, Month Date, Year at Time</h3>
         
     </header>
 
@@ -130,40 +18,47 @@
 
     <p>Whats your name?</p> 
 
-    <input id="enteredName" required>
+    <input id="entered-name" required>
     
     <p>How are you feeling (one word)?</p> 
 
     <input id="feeling" required> 
-    <button type="button" onclick="printGreeting()">Submit</button>
+    <button id="greeting" type="button">Submit</button>
 
-    <p id="feelingMessage"></p>
+    <p id="feeling-message"></p>
 
 
 
     <p>Enter your favorite number 1-10</p> 
 
     <input id="number" required> 
-    <button type="button" onclick="polyfun()">Submit</button>
+    <button id="polyfun" type="button">Submit</button>
 
-    <p id="polygonMessage"></p>
+    <p id="polygon-message"></p>
 
 
     <br>
     <br>
-    <button id="myButton" onclick="showTextOne()">Pet the Phoenix</button>
-    <button id="myButtonTwo" onclick="showTextTwo()">Is the Phoenix feeling salty?</button>
+    <button id="my-button">Pet the Phoenix</button>
+    <button id="my-button-two">Is the Phoenix feeling salty?</button>
     <br>
-    <button id="myButtonThree" onclick="showTextThree()">Calculate Profits</button>
-    <button id="myButtonFour" onclick="showTextFour()">Where am I?</button>
+    <button id="my-button-three" >Calculate Profits</button>
+    <button id="my-button-four" >Where am I?</button>
     <p id="message"></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
     <footer>
-        <a id="html-validator" href="https://validator.w3.org/" target="_blank">HTML Validator</a>
-        <a id="CSS-validator" href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a>
+      <div data-include="components/footer.html"></div>
     </footer>
-
+    <script src="scripts/HTMLInclude.min.js"></script>
     
-
+    <script src="scripts/defaultscripts.js"></script>
 </body>
+</html>
