@@ -132,6 +132,10 @@ h1 {
   label {
     line-height: 2;
 }
+button[type="submit"]{
+  background-color:rgb(28, 0, 63);
+  color: rgb(189, 189, 189);
+}
 .content {
   margin-bottom: 100px;
   }

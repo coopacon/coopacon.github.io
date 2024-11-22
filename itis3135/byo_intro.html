@@ -34,9 +34,9 @@
   </header>
   <main>
     <h2><br>BYO Intro</h2>
-    <h3 id="formPrompt">Time to BYO Intro page. Please fill out the fields below to make one</h3>
+    <h3 id="form-prompt">Time to BYO Intro page. Please fill out the fields below to make one</h3>
     
-    <form action="#" method="post" id="sampleForm">
+    <form action="#" method="post" id="sample-form">
     
       <label>Enter Full Name: </label>
       <input type="text" id="name" value="Isaac Cooper" required>
@@ -81,9 +81,11 @@
 
       
       <label>Enter Courses Currently Taking: </label>
-        <div id="multipleFields"></div>
-        <button type="button" id="addClass" onclick="addField()">Add Class</button>
-        <button type="button" id="deleteClass" onclick="deleteField()">Remove Class</button>
+        <div id="multiple-fields"></div>
+        <!-- <button type="button" id="add-class" onclick="addField()">Add Class</button>
+        <button type="button" id="delete-class" onclick="deleteField()">Remove Class</button> -->
+        <button type="button" id="add-class">Add Class</button>
+        <button type="button" id="delete-class">Remove Class</button>
       <br>
 
       <label>Enter anything funny?: </label>
@@ -110,32 +112,35 @@
       <button type="submit">Submit</button>
   
     </form>
-    <div style="text-align: center;">
+    <!-- <div style="text-align: center;">
       
-    </div>
-    <content id="customIntro" class="custom">
-        <h2> <span class="s1"><strong id="nameDisplay">I</strong></span></h2>
-        <p id="mascotDisplay">bird</p>
+    </div> -->
+    <content id="custom-intro" class="custom">
+        <h2> <span class="s1"><strong id="name-display">I</strong></span></h2>
+        <p id="mascot-display">bird</p>
 
-        <img id="pictureDisplay" src="#" alt="Selected image" class="pic">
-        <p id="captionDisplay"></p>
+        <img id="picture-display" src="#" alt="Selected image" class="pic">
+        <p id="caption-display"></p>
 
-        <p id="personalDisplay">
-        <p id="professionalDisplay">Professional Background: I am an Eagle Scout and just finished a children’s software/filming teaching job at Blackrocket over the summer.</p>
-        <p id="academicDisplay">Academic Background:  I am studying computer science with a minor in Software Engineering. I am currently starting my Senior year.</p>
-      <p id="developementDisplay">Background in this Subject:  I’ve very lightly touched html before.</p>
-      <p id="computerDisplay">Primary Computer Platform:  MacOS.</p>
+        <p id="personal-display">
+        <p id="professional-display">Professional Background: I am an Eagle Scout and just finished a children’s software/filming teaching job at Blackrocket over the summer.</p>
+        <p id="academic-display">Academic Background:  I am studying computer science with a minor in Software Engineering. I am currently starting my Senior year.</p>
+      <p id="developement-display">Background in this Subject:  I’ve very lightly touched html before.</p>
+      <p id="computer-display">Primary Computer Platform:  MacOS.</p>
       <p><strong>Courses I'm Taking:</strong></p>
-      <div id="coursesDisplay"></div>
+      <div id="courses-display"></div>
       
-      <p id="funnyDisplay"></p>
-      <p id="elseDisplay"></p>
+      <p id="funny-display"></p>
+      <p id="else-display"></p>
       <p>I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</p>
       <br>
       
       </p>
     </content>
-  <p><a href="#" onclick="location.reload(); return false;">Reset Page</a></p>
+  <p>
+    <!-- <a href="#" onclick="location.reload(); return false;">Reset Page</a> -->
+    <a href="#" id="reload">Reset Page</a>
+  </p>
   <div class="content"></div>
   </main>
   <footer>
