@@ -1,0 +1,2 @@
+//Update the paragraph element with the values from local storage
+document.getElementById("results").innerHTML = "Team Score: "+localStorage.getItem("team")+"\nAdvanced Co-op Score: "+localStorage.getItem("advanced");
