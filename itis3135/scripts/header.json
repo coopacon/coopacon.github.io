@@ -1,0 +1,77 @@
+{
+    "header": {
+      "title": "Isaac Cooper's Indicative Crab † ITIS 3135",
+      "navigation": [
+        {
+          "label": "Home",
+          "link": "index.html"
+        },
+        {
+          "label": "Introduction",
+          "link": "introduction.html"
+        },
+        {
+          "label": "Contract",
+          "link": "contract.html"
+        },
+        {
+          "label": "About",
+          "link": "about.html"
+        },
+        {
+          "label": "Website Evaluations",
+          "link": "website_evaluations/index.html"
+        },
+        {
+          "label": "Tables",
+          "link": "tables.html"
+        },
+        {
+          "label": "Forms",
+          "link": "forms.html"
+        },
+        {
+          "label": "Project Overview",
+          "link": "https://webpages.charlotte.edu/icooper2/client-project/project_overview.html"
+        },
+        {
+          "label": "First Scripts",
+          "link": "firstscripts.html"
+        },
+        {
+          "label": "BYO",
+          "link": "byo_intro.html"
+        },
+        {
+          "label": "Interactive Drawing",
+          "link": "drawing.html"
+        }
+      ],
+      "extraNavigation": [
+        {
+          "label": "Crappy Webpage",
+          "link": "stuff/ONDeX→.html"
+        },
+        {
+          "label": "Hobby",
+          "link": "hobby/"
+        },
+        {
+          "label": "Review 1",
+          "link": "review1.html"
+        },
+        {
+          "label": "Review 2",
+          "link": "review2.html"
+        },
+        {
+          "label": "Device Verification",
+          "link": "links.html"
+        },
+        {
+          "label": "Slideshow",
+          "link": "slideshow.html"
+        }
+      ]
+    }
+  }

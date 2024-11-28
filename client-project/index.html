@@ -12,21 +12,42 @@
 </head>
 <body>
   <header>
-    <h1>Unofficial Leadership Skills for Team Member Success Form</h1>
+    <div data-include="components/header.html"></div>
   </header>
   <main>
     <h2><br>Homepage</h2>
 
-    <img src="images/LeadershipSkillsforTeamMemberSuccessChicken.png" alt="An abstract photo of a red chicken">
+    <img src="images/leadership_skills_for_team_member_success_chicken.png" alt="An abstract photo of a red chicken">
     
     <h4>Welcome to the unofficial Leadership Skills for Team Member Success Form</h4>
+
+    <!-- Button for description -->
+    <div class="buttons">
+      <button class="dropdown"><h3>What is this form?</h3></button>
+    </div>
+
+    <div class="buttons">
+      <div class="dropped-info">
+        <p>
+          This is a form for team members and leaders to better understand their effectiveness as teammates,
+           followers, and leaders. <br>
+          The end will have four measures of score: <br>
+          one team member score,
+          one cooperation score,
+          one leader score,
+          and one director score.
+        </p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
 
     <p>Please note that leaving a form page by clicking on the navigation links will not save the form's current progress</p>
 
     <p>Click <a href="forms.html">HERE</a> to go to the first page of my form</p>
 
     
-
+    <div class="small-divider"></div>
 
   
   </main>
@@ -34,11 +55,11 @@
 
   
   <footer>
-    <nav>
-      <p> <a href="index.html">Homepage</a> | <a href="forms.html">p1</a> | <a href="forms-two.html">p2</a> | <a href="forms-three.html">p3</a> | <a href="forms-four.html">p4</a> </p>
-    </nav>
+    <div data-include="components/footer.html"></div>
   </footer>
+  <!-- Importing jquery code for description box fucntion -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="scripts/homepage.js"></script>
   
-
 </body>
 </html>

@@ -7,8 +7,8 @@
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <div data-include="components/header.html"></div>
+  <header id="dynamic-header">
+    <!-- <div data-include="components/header.html"></div> -->
   </header>
   <main>
     <h2> <span class="s1"><strong>I am Isaac and this is my ITIS3135 Second Course Page</strong></span></h2>
@@ -43,8 +43,9 @@
       <br>
     </ul>
   </main>
-  <footer>
-    <div data-include="components/footer.html"></div>
+  <footer id="dynamic-footer">
+    <!-- <div data-include="components/footer.html"></div> -->
+    <script src="scripts/load_header.js"></script>
   </footer>
   <script src="scripts/HTMLInclude.min.js"></script>
 </body>

@@ -1,0 +1,48 @@
+{
+    "footer": {
+      "quote": "Too tasty to not be shell-fish",
+      "navigation": [
+        {
+          "label": "University webpages",
+          "link": "https://webpages.charlotte.edu/icooper2"
+        },
+        {
+          "label": "github.com",
+          "link": "https://github.com/coopacon"
+        },
+        {
+          "label": "github.io",
+          "link": "https://coopacon.github.io"
+        },
+        {
+          "label": "LinkedIn",
+          "link": "https://www.linkedin.com/in/isaac-cooper-49a63829a/"
+        },
+        {
+          "label": "FreeCodeCamp",
+          "link": "https://www.freecodecamp.org/coopacon"
+        },
+        {
+          "label": "Codecademy",
+          "link": "https://www.codecademy.com/profiles/coopacon"
+        }
+      ],
+      "credits": {
+        "designedBy": {
+          "label": "Indicative Crab",
+          "link": "IC-Now-Enterprises.com"
+        },
+        "year": "2024",
+        "certifications": [
+          {
+            "label": "HTML Certification",
+            "link": "https://www.freecodecamp.org/certification/coopacon/responsive-web-design"
+          },
+          {
+            "label": "JavaScript Certification",
+            "link": "https://www.freecodecamp.org/certification/coopacon/javascript-algorithms-and-data-structures-v8"
+          }
+        ]
+      }
+    }
+  }

@@ -131,15 +131,7 @@ document.getElementById("picture").addEventListener("change", function(event){
 
 
 
-let j = document.getElementById("html-validator");
-let k = document.getElementById("html-validator").href;
-document.getElementById("html-validator").href = "https://validator.w3.org/check?uri=" + "thisPage";
-document.getElementById("CSS-validator").href =  "https://jigsaw.w3.org/css-validator/validator?uri=" + thisPage;
-
-
-document.getElementById("add-class").addEventListener("click", addField);
-document.getElementById("delete-class").addEventListener("click", deleteField);
-document.getElementById("reload").addEventListener("click", reload);
-
-
-
+// let j = document.getElementById("html-validator");
+// let k = document.getElementById("html-validator").href;
+// document.getElementById("html-validator").href = "https://validator.w3.org/check?uri=" + "thisPage";
+// document.getElementById("CS
