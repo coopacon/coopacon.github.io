@@ -13,16 +13,22 @@ async function loadHeader() {
 
       // Navigation
       const navElement = document.createElement("nav");
+      navElement.setAttribute('class','p');
       data.header.navigation.forEach((item) => {
         const link = document.createElement("a");
         link.href = item.link;
         link.textContent = item.label;
         navElement.appendChild(link);
         navElement.innerHTML += " † "; // Add separator
+        navElement.setAttribute('class','p');
       });
 
       // Append nav to header
       headerElement.appendChild(navElement);
+
+      // Insert a horizontal line between the first and second navigation sections
+    const hrElement = document.createElement("p");
+    headerElement.appendChild(hrElement); // This adds a line
 
       // Extra Navigation
       const extraNavElement = document.createElement("nav");
@@ -32,10 +38,14 @@ async function loadHeader() {
         link.textContent = item.label;
         extraNavElement.appendChild(link);
         extraNavElement.innerHTML += " † "; // Add separator
+        extraNavElement.setAttribute('class','p');
       });
 
       // Append extra nav to header
       headerElement.appendChild(extraNavElement);
+
+      const extraHrElement = document.createElement("p");
+    headerElement.appendChild(extraHrElement); // This adds a line
 
       // Add header to the body
       document.body.insertBefore(headerElement, document.body.firstChild);
@@ -65,6 +75,7 @@ async function loadHeader() {
         a.textContent = link.label;
         navElement.appendChild(a);
         navElement.innerHTML += " † "; // Add separator
+        navElement.setAttribute('class','p');
       });
       footerElement.appendChild(navElement);
 

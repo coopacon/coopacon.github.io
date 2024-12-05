@@ -45,7 +45,7 @@ h1 {
               -1px 1px 0 black, 
               3px 3px 0 black;
   }
-  p, figcaption {
+  p, figcaption, .p {
     display: block;
     margin-left: 10%;
     margin-right: 10%;

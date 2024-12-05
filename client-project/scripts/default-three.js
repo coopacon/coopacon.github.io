@@ -30,7 +30,7 @@ function prev() {
         managerCount += parseInt(document.querySelector('input[name="finance"]:checked').value);
 
         //Alert for debugging
-        alert(managerCount);
+        // alert(managerCount);
 
         //Store the total in local storage
         localStorage.setItem("manager", managerCount);

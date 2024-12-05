@@ -30,7 +30,7 @@ function next (){
         teamCount+=parseInt(document.querySelector('input[name="relation"]:checked').value);
 
         //Alert for debugging
-        alert(teamCount);
+        // alert(teamCount);
 
         //Store the total in local storage
         localStorage.setItem("team", teamCount);
