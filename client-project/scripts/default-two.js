@@ -77,7 +77,7 @@ function next (){
         advancedCount+=parseInt(document.querySelector('input[name="relationship"]:checked').value);
 
         //Alert for debugging
-        alert(advancedCount);
+        // alert(advancedCount);
 
         //Store the total in local storage
         localStorage.setItem("advanced", advancedCount);

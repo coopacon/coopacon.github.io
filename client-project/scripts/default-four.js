@@ -76,7 +76,7 @@ function next() {
         equippingCount += parseInt(document.querySelector('input[name="riskTaking"]:checked').value);
 
         // Alert for debugging
-        alert(equippingCount);
+        // alert(equippingCount);
 
         // Store the total in local storage
         localStorage.setItem("equipping", equippingCount);
